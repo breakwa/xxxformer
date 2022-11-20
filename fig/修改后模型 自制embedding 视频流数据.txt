@@ -1,0 +1,61 @@
+Use GPU: cuda:0
+1
+>>>>>>>start training : REFINED_NBC news G16B3-QP28_96_24_Autoformer_ETTh1_ftM_sl96_ll48_pl24_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8521
+val 2857
+test 2857
+	iters: 100, epoch: 1 | loss: 0.3139938
+	speed: 0.6806s/iter; left time: 1743.0055s
+	iters: 200, epoch: 1 | loss: 0.3327578
+	speed: 0.3149s/iter; left time: 774.9098s
+Epoch: 1 cost time: 121.32725811004639
+Epoch: 1, Steps: 266 | Train Loss: 0.3830238 Vali Loss: 0.5693067 Test Loss: 0.5292829
+Validation loss decreased (inf --> 0.569307).  Saving model ...
+Updating learning rate to 0.0001
+	iters: 100, epoch: 2 | loss: 0.2646420
+	speed: 1.8671s/iter; left time: 4285.0227s
+	iters: 200, epoch: 2 | loss: 0.2964519
+	speed: 0.3198s/iter; left time: 701.9904s
+Epoch: 2 cost time: 124.62405776977539
+Epoch: 2, Steps: 266 | Train Loss: 0.2382879 Vali Loss: 0.4973066 Test Loss: 0.4855968
+Validation loss decreased (0.569307 --> 0.497307).  Saving model ...
+Updating learning rate to 5e-05
+	iters: 100, epoch: 3 | loss: 0.2207622
+	speed: 1.8994s/iter; left time: 3853.8181s
+	iters: 200, epoch: 3 | loss: 0.1900710
+	speed: 0.3235s/iter; left time: 623.9887s
+Epoch: 3 cost time: 124.65535640716553
+Epoch: 3, Steps: 266 | Train Loss: 0.1711878 Vali Loss: 0.4914601 Test Loss: 0.4983238
+Validation loss decreased (0.497307 --> 0.491460).  Saving model ...
+Updating learning rate to 2.5e-05
+	iters: 100, epoch: 4 | loss: 0.2087817
+	speed: 1.8951s/iter; left time: 3341.0272s
+	iters: 200, epoch: 4 | loss: 0.0885531
+	speed: 0.3292s/iter; left time: 547.4049s
+Epoch: 4 cost time: 126.60772323608398
+Epoch: 4, Steps: 266 | Train Loss: 0.1384426 Vali Loss: 0.5133660 Test Loss: 0.5241320
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.25e-05
+	iters: 100, epoch: 5 | loss: 0.1034148
+	speed: 1.8974s/iter; left time: 2840.4207s
+	iters: 200, epoch: 5 | loss: 0.1809714
+	speed: 0.3318s/iter; left time: 463.5310s
+Epoch: 5 cost time: 126.17334508895874
+Epoch: 5, Steps: 266 | Train Loss: 0.1257591 Vali Loss: 0.5253825 Test Loss: 0.5331005
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.25e-06
+	iters: 100, epoch: 6 | loss: 0.0913251
+	speed: 1.8942s/iter; left time: 2331.7061s
+	iters: 200, epoch: 6 | loss: 0.1229373
+	speed: 0.3220s/iter; left time: 364.2296s
+Epoch: 6 cost time: 124.94095182418823
+Epoch: 6, Steps: 266 | Train Loss: 0.1174871 Vali Loss: 0.5344895 Test Loss: 0.5417241
+EarlyStopping counter: 3 out of 3
+Early stopping
+2
+>>>>>>>testing : REFINED_NBC news G16B3-QP28_96_24_Autoformer_ETTh1_ftM_sl96_ll48_pl24_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2857
+test shape: (89, 32, 24, 7) (89, 32, 24, 7)
+test shape: (2848, 24, 7) (2848, 24, 7)
+mse:0.49832379817962646, mae:0.42646360397338867
+3
